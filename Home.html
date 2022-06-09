@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+
+<head>
+	<!-- Meta -->
+	<meta charset    = "UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name       = "viewport" content        = "width=device-width, initial-scale=1.0">
+	<!-- Stylesheets, small chunks -->
+	<link rel  = "stylesheet" href                                                               = "./css/globals.css">
+	<link rel  = "stylesheet" href                                                               = "./css/proj.css">
+	<link rel  = "preconnect" href                                                               = "https://fonts.googleapis.com">
+	<link rel  = "preconnect" href                                                               = "https://fonts.gstatic.com" crossorigin>
+	<link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel = "stylesheet">
+	<title>Home</title>
+</head>
+<body class = "flex-column f-center">
+    <!-- Start of Navbar -->
+    <nav class = "flex-row f-sa sec-1">
+        <ul>
+            <li class = "lists"><a class = "group" href = "Home.html">Home</a></li>
+            <li class = "lists"><a class = "group" href = "About.html">About</a></li>
+            <li class = "lists"><a class = "group" href = "Contact us.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Start of Slider -->
+    <section class = "flex-column f-sb sec-2">
+    <div     class = "flex-row slider">
+    <img     class = "sideimgs" id             = "nextImg" loading = "lazy" src         = "./imgs/1.png" alt = "">
+    <img     id    = "centerImg" 					 loading = "lazy" src        = "./imgs/2.png" alt = "">
+    <img     class = "sideimgs" id             = "preImg" loading  = "lazy" src         = "./imgs/3.png" alt = "">
+            </div>
+            <div    class = "flex-row f-center">
+            <button class = "orange-color hover slider-btn" onclick = "next()">&#8592</button>
+            <button class = "orange-color hover slider-btn" onclick = "pre()">&#8594</button>
+            </div>
+    </section>
+    <!-- End of Slider -->
+
+    <!-- Start of paragraph -->
+    <section    class              = "flex-column f-center sec-3">
+    <h1>WELCOME TO OUR <span class = "orange-color">STORE!</span></h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nemo consequatur sapiente atque iste officiis explicabo quia repellat distinctio corporis sunt aspernatur, debitis facere culpa nulla, unde voluptas quo alias!
+            <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vero iste dicta veritatis sed natus dolorum, vel magnam incidunt mollitia temporibus impedit distinctio cupiditate. Assumenda alias recusandae cupiditate molestiae ab?
+            <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum et vero, reiciendis ad consequuntur totam a nulla aliquid, accusamus labore porro ullam quo, ipsam officia numquam quis corporis ratione quasi?
+            <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cumque minus iusto neque deleniti fugiat aut similique, officiis exercitationem corporis non repellendus. Exercitationem cum dolorem nulla dolorum, officia repellat aliquid?
+        </p>
+    </section>
+    <!-- End of paragraph -->
+    
+    <!-- Start of products -->
+    <section class       = "flex-column f-center sec-4">
+    <h1>OUR  <span class = "orange-color">PRODUCTS</span></h1>
+    <div     class       = "icon">
+    <i       class       = " fa fa-shopping-cart"></i>
+    <p       id          = "span">
+
+            </p>
+        </div>
+
+        <div class = "filter-box">
+        <a   class = "filter-btn" href = "#" data-filter = "all">All</a>
+        <a   class = "filter-btn" href = "#" data-filter = "Cars">Cars</a>
+        <a   class = "filter-btn" href = "#" data-filter = "Phones">Phones</a>
+        <a   class = "filter-btn" href = "#" data-filter = "Clothes">Clothes</a>
+        </div>
+        <div     class = "slide-container">
+        <section class = "container" id     = "store-products">
+        <div     class = "store-product Cars">
+        <img     src   = "./imgs/4.jpg" alt = "">
+        <div     class = "product-details">
+                        <h2>Car Product</h2>
+                        <p>$50,000</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Cars">
+                <img src   = "./imgs/5.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Car Product</h2>
+                        <p>$50,000</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Cars">
+                <img src   = "./imgs/6.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Car Product</h2>
+                        <p>$50,000</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Cars">
+                <img src   = "./imgs/7.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Car Product</h2>
+                        <p>$50,000</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Phones">
+                <img src   = "./imgs/8.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Mobiles Product</h2>
+                        <p>$500</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Phones">
+                <img src   = "./imgs/9.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Mobiles Product</h2>
+                        <p>$500</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Phones">
+                <img src   = "./imgs/10.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Mobiles Product</h2>
+                        <p>$500</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Phones">
+                <img src   = "./imgs/11.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Mobiles Product</h2>
+                        <p>$500</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Clothes">
+                <img src   = "./imgs/12.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Clothes Product</h2>
+                        <p>$50</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Clothes">
+                <img src   = "./imgs/13.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Clothes Product</h2>
+                        <p>$50</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Clothes">
+                <img src   = "./imgs/14.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Clothes Product</h2>
+                        <p>$50</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+                <div class = "store-product Clothes">
+                <img src   = "./imgs/15.jpg" alt = "">
+                <div class = "product-details">
+                        <h2>Clothes Product</h2>
+                        <p>$50</p>
+                        <button class = "cart-btn" href = "#">Add to cart</button>
+                    </div>
+                </div>
+            
+            </section>
+        </div>
+    </section>
+    <!-- End of products -->
+
+    <!-- Start of paragraph -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nemo consequatur sapiente atque iste officiis explicabo quia repellat distinctio corporis sunt aspernatur, debitis facere culpa nulla, unde voluptas quo alias!
+        <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vero iste dicta veritatis sed natus dolorum, vel magnam incidunt mollitia temporibus impedit distinctio cupiditate. Assumenda alias recusandae cupiditate molestiae ab?
+        <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum et vero, reiciendis ad consequuntur totam a nulla aliquid, accusamus labore porro ullam quo, ipsam officia numquam quis corporis ratione quasi?
+        <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cumque minus iusto neque deleniti fugiat aut similique, officiis exercitationem corporis non repellendus. Exercitationem cum dolorem nulla dolorum, officia repellat aliquid?
+    </p>
+    <!-- End of paragraph -->
+
+    <!-- Start of Footer -->
+    <footer class = "flex-row f-sa sec-5">
+        <p      class = "sponcer">This store is sponcered by<span class = "orange-color"> Our Organization</span></p>
+        <button id    = "up" class                                      = "flex-column f-center up-btn">&#8593</button>
+        </footer>
+        <!-- End of Footer -->
+
+        <script src = "./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+
+<head>
+	<!-- Meta -->
+	<meta charset    = "UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name       = "viewport" content        = "width=device-width, initial-scale=1.0">
+	<!-- Stylesheets, small chunks -->
+	<link rel  = "stylesheet" href                                                               = "./css/globals.css">
+	<link rel  = "stylesheet" href                                                               = "./css/proj.css">
+	<link rel  = "preconnect" href                                                               = "https://fonts.googleapis.com">
+	<link rel  = "preconnect" href                                                               = "https://fonts.gstatic.com" crossorigin>
+	<link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel = "stylesheet">
+	<title>Contact Us</title>
+</head>
+<body class = "flex-column f-center">
+        <!-- Start of Navbar -->
+        <nav class = "flex-row f-sa sec-1">
+            <ul>
+                <li class = "lists"><a class = "group" href = "Home.html">Home</a></li>
+                <li class = "lists"><a class = "group" href = "About.html">About</a></li>
+                <li class = "lists"><a class = "group" href = "Contact us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- End of Navbar -->
+
+        <!-- Start of sec 1 -->
+        <form id="user-data">
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter your name" autocomplete="off" oninput="checkIfValid(event)"/>
+                <span class="error-message">You need to enter a name, 3 characters long.</span>
+            </p>
+            <p>
+                <label for="email">Email Address</label>
+                <input type="text" name="email" placeholder="Enter your email" autocomplete="off" oninput="checkIfValid(event)"/>
+                <span class="error-message">You need to eneter a valid email.</span>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Must be 8 Characters, At least!" oninput="checkIfValid(event)"/>
+                <span class="error-message">Password must be 8 characters long.</span>
+            </p>
+            
+            <button onclick="checkData(event)">Contact Us</button>
+        </form>
+        <div id="target">
+            <h1>Thank you for submitting your information.</h1>
+        </div>
+        <!-- End of sec 1 -->
+
+            <!-- Start of paragraph -->
+    <p class           = "para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nemo consequatur sapiente atque iste officiis explicabo quia repellat distinctio corporis sunt aspernatur, debitis facere culpa nulla, unde voluptas quo alias!
+        <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vero iste dicta veritatis sed natus dolorum, vel magnam incidunt mollitia temporibus impedit distinctio cupiditate. Assumenda alias recusandae cupiditate molestiae ab?
+        <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum et vero, reiciendis ad consequuntur totam a nulla aliquid, accusamus labore porro ullam quo, ipsam officia numquam quis corporis ratione quasi?
+        <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cumque minus iusto neque deleniti fugiat aut similique, officiis exercitationem corporis non repellendus. Exercitationem cum dolorem nulla dolorum, officia repellat aliquid?
+    </p>
+    <!-- End of paragraph -->
+
+
+            <!-- Start of Footer -->
+    <footer class = "flex-row f-sa sec-5">
+    <p      class = "sponcer">This store is sponcered by<span class = "orange-color"> Our Organization</span></p>
+    <button id    = "up" class                                      = "flex-column f-center up-btn">&#8593</button>
+        </footer>
+        <!-- End of Footer -->
+        <script src = "./js/app.js"></script>
+</body>
+</html>
